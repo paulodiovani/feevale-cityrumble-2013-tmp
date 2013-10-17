@@ -2,7 +2,7 @@
 
 > Sugestão: Utilizar NoSQL, possivelente Amazon DynamoDB
 >
-> _Obs: acredito que a estrutura apresentada a seguir é pouco útil para NoSQL, especialmente para DynamoDB, que utiliza um máximo de duas chaves. Dessa forma, o modelo de dados deverá ser repensado.
+> _Obs: acredito que a estrutura apresentada a seguir é pouco útil para NoSQL, especialmente para DynamoDB, que utiliza um máximo de duas chaves. Dessa forma, o modelo de dados deverá ser repensado em breve._
     
 ## Lista de objetos
 
