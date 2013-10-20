@@ -86,3 +86,14 @@ Este objeto será, provavelmente, o mais importante da aplicação. O qual dará
 | id            |
 | local_id      |
 | option_id     |
+
+### Necessidades de Usuários
+
+Opção para vincular as Necessidades aos Usuários. 
+
+| user_disabilities |
+| ----------------- |
+| id                |
+| user_id           |
+| disability_id     |
+
