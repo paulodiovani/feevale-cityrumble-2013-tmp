@@ -13,7 +13,7 @@
         <homepage>http://mycompany.com</homepage>
         <copyright>Copyright My Company</copyright>
     </author>
-    <mainFile>TenhoAcesso.html</mainFile>
+    <mainFile>TaMain.html</mainFile>
     <features/>
     <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
     <iphone bundleId="com.TenhoAcesso" version="1.0">

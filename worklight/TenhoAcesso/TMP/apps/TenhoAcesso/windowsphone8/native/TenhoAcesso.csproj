@@ -166,7 +166,9 @@
 <Content Include="www\default\js\initOptions.js" />
 <Content Include="www\default\js\messages.js" />
 <Content Include="www\default\js\TenhoAcesso.js" />
-<Content Include="www\default\TenhoAcesso.html" />
+<Content Include="www\default\TaAvalia.html" />
+<Content Include="www\default\TaLocal.html" />
+<Content Include="www\default\TaMain.html" />
 <Content Include="www\default\wlclient\css\wlclient.css" />
 <Content Include="www\default\wlclient\images\empty.gif" />
 <Content Include="www\default\wlclient\js\analytics\analytics.js" />
