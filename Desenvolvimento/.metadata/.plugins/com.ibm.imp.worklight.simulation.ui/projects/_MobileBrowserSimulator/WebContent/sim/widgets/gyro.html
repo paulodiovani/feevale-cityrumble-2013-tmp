@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Compass</title>
+
+<link rel="stylesheet" type="text/css"
+	href="../../dojo/dijit/themes/dijit.css">
+<link rel="stylesheet" type="text/css"
+	href="../../dojo/dijit/themes/claro/claro.css">
+<style>
+
+.noSelect {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	khtml-user-select: none;
+	user-select: none;
+}
+
+</style>
+<script type="text/javascript"
+	data-dojo-config="isDebug: false, parseOnLoad: true,  paths: {'widgets' : '../../sim/widgets'}"
+	src="../../dojo/dojo/dojo.js">
+	
+</script>
+
+<script type="text/javascript">
+	require(["dojo/ready", "dojo/_base/lang", "dojo/_base/connect", "widgets/Gyro"], 
+	function(ready, lang, connect, Gyro){
+	    ready(function(){
+		    var c = new Gyro({
+		    }, dojo.byId("gyro"));
+		    c.startup();
+	    });
+    });
+</script>
+
+</head>
+<body class="claro">
+	<div id="gyro" style="width:300px; height:300px;" class="noSelect"></div>
+</body>
+</html>

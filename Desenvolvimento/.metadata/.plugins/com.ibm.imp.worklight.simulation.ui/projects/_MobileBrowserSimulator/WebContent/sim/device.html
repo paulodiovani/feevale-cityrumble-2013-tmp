@@ -1,0 +1,73 @@
+
+<table style="cellspacing: 10;">
+	<tr>
+		<td><label for="name" id="sim_device_select_label"></label></td>
+		<td><button data-dojo-type="dijit.form.Button" type="button"
+				data-dojo-id="sim_device_previous_button" id="sim_device_previous_button"
+				onClick="getService('Device').previousDevice()"></button></td>
+		<td><button data-dojo-type="dijit.form.Button" type="button"
+				data-dojo-id="sim_device_next_button" id="sim_device_next_button"
+				onClick="getService('Device').nextDevice()"></button></td>
+	</tr>
+</table>
+<table style="cellspacing: 10;">
+	<tr>
+		<td><label for="name">Model/Name:</label></td>
+		<td><input type="text" name="name" value="" readOnly="true"
+			data-dojo-type="dijit.form.TextBox" id="sim_device_name" data-dojo-id="sim_device_name"
+			onchange="getService('Device').saveDevice()" /></td>
+	</tr>
+	<tr>
+		<td><label for="platform">Platform:</label></td>
+		<td><input type="text" name="platform" value="" readOnly="true"
+			data-dojo-type="dijit.form.TextBox" id="sim_device_platform" data-dojo-id="sim_device_platform"
+			onchange="getService('Device').saveDevice()" /></td>
+	</tr>
+
+	<tr>
+		<td><label for="version">Version:</label></td>
+		<td><input type="text" name="version" value="" readOnly="true"
+			data-dojo-type="dijit.form.TextBox" id="sim_device_version" data-dojo-id="sim_device_version"
+			onchange="getService('Device').saveDevice()" /></td>
+	</tr>
+<!-- Hide uuid because of 
+     https://jazzop04.rtp.raleigh.ibm.com:9943/jazz/web/projects/Rational%20Application%20Developer#action=com.ibm.team.workitem.viewWorkItem&id=96873
+     Not removed because simjs uses this internally 
+     -->
+	<tr style="display:none;">
+		<td><label for="uuid">UUID:</label></td>
+		<td><input type="text" name="uuid" value="" readOnly="true"
+			data-dojo-type="dijit.form.TextBox" id="sim_device_uuid" data-dojo-id="sim_device_uuid"
+			onchange="getService('Device').saveDevice()" /></td>
+	</tr>
+
+	<tr>
+		<td><label for="deviceSize">Size:</label></td>
+		<td><input type="text" name="deviceWidth" value=""
+			readOnly="true" data-dojo-type="dijit.form.TextBox" id="sim_device_deviceWidth" data-dojo-id="sim_device_deviceWidth"
+			style="width: 50px;" onchange="getService('Device').setDeviceSize()" />
+			x <input type="text" name="deviceHeight" value=""
+			data-dojo-type="dijit.form.TextBox" id="sim_device_deviceHeight" data-dojo-id="sim_device_deviceHeight" readOnly="true"
+			style="width: 50px;" onchange="getService('Device').setDeviceSize()" />
+			(w x h pixels)</td>
+	</tr>
+	<tr>
+		<td><label for="deviceOrient">Orientation:</label></td>
+		<td>
+			<form id="sim_device_deviceOrientForm">
+				<input type="radio" name="deviceOrient" disabled='disabled'
+					id="sim_device_deviceOrientProfile" value="p" checked
+					onchange="getService('Device').setDeviceSize()" /> <label
+					for="deviceOrientProfile">Profile</label> <input type="radio"
+					name="deviceOrient" disabled='disabled' id="sim_device_deviceOrientLandscape"
+					value="l" onchange="getService('Device').setDeviceSize()" /> <label
+					for="deviceOrientLandscape">Landscape</label>
+			</form></td>
+	</tr>
+	<tr>
+		<td><label for="cordova">Cordova:</label></td>
+		<td><input type="text" name="cordova" value="" readOnly="true"
+			data-dojo-type="dijit.form.TextBox" id="sim_device_cordova" data-dojo-id="sim_device_cordova"
+			onchange="getService('Device').saveDevice()" /></td>
+	</tr>
+</table>

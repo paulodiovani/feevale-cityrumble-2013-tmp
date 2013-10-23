@@ -1,0 +1,125 @@
+<div id="capture">
+<form>
+	<table>
+		<tr>
+			<th id="sim_capture_choose_audio" colspan="2">Choose file(s):</th>
+		</tr>
+		<tr>
+			<td style="width:70px;"><label id="sim_capture_audio1"></label></td>
+			<td>
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').setAudioFile(this.checked, this.data);
+				},
+				data : 'AudioFile1'"
+					id="captureAudioFile1"></div></td>
+			<td colspan="2">
+				<audio controls="controls" style="width : 283px;"
+						id="captureAudioPlayer1"
+						> </audio>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:70px;"><label id="sim_capture_audio2"></label></td>
+			<td>
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').setAudioFile(this.checked, this.data);
+				},
+				data : 'AudioFile2'"
+					id="captureAudioFile2"></div></td>
+			<td colspan="2">
+			 	<audio controls="controls" style="width : 283px;"
+						id="captureAudioPlayer2"
+						> </audio>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:70px;"><label id="sim_capture_audio3"></label></td>
+			<td>
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').setAudioFile(this.checked, this.data );
+				},
+				data : 'AudioFile3'"
+					id="captureAudioFile3"></div></td>
+			<td colspan="2">
+			 	<audio controls="controls" style="width : 283px;"
+						id="captureAudioPlayer3"
+						> </audio>
+			</td>
+		</tr>
+		<tr>
+			<th id="sim_capture_choose_video" colspan="2"></th>
+		</tr>
+		<tr>
+			<td style="width:70px;"><label id="sim_capture_video1"></label></td>
+			<td>
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').setVideoFile(this.checked,this.data );
+				},
+				data : 'VideoFile1'"
+					id="captureVideoFile1"></div></td>
+			<td>
+				<button data-dojo-type="dijit.form.Button" type="button"
+					data-dojo-id="sim_capture_playVideo1_button"
+					onClick="getService('Capture').playVideo('VideoFile1');"></button>
+			</td>
+			<td rowspan="4">
+				<div style="" id="captureVideoContainer">
+					<video autoplay="true" style="width : 233px;"
+						id="captureVideoPlayer"
+						> </video>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:70px;"><label id="sim_capture_video2"></label></td>
+			<td>
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').setVideoFile(this.checked,this.data );
+				},
+				data : 'VideoFile2'"
+					id="captureVideoFile2"></div></td>
+			<td>
+				<button data-dojo-type="dijit.form.Button" type="button"
+				data-dojo-id = "sim_capture_playVideo2_button"
+					onClick="getService('Capture').playVideo('VideoFile2');"></button>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:70px;"><label id="sim_capture_video3"></label></td>
+			<td>
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').setVideoFile(this.checked, this.data );
+				},
+				data : 'VideoFile3'"
+					id="captureVideoFile3"></div></td>
+			<td>
+				<button data-dojo-type="dijit.form.Button" type="button"
+				data-dojo-id = "sim_capture_playVideo3_button"
+					onClick="getService('Capture').playVideo('VideoFile3');"></button>
+			</td>
+		</tr>
+		<tr>
+			<td><div><br><br></div></td>
+		</tr>
+		<tr>
+			<td style="width:70px;"></td>
+			<td >
+				<div data-dojo-type="dijit.form.CheckBox"
+					data-dojo-props="onChange : function(b) {
+					getService('Capture').generateError(this.checked);
+				}"
+					id="sim_capture_generate_error_checkbox"></div></td>
+			<td colspan="2" >
+				<div data-dojo-type="dijit.form.Select" style="width: 280px;"
+					id="sim_capture_generate_error"></div>
+			<label id="sim_capture_generate_error"></label></td>
+		</tr>
+	</table>
+</form>
+</div>

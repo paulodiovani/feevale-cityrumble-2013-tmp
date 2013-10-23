@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="/Users/cla/Documents/workspace/TMP/Desenvolvimento/.metadata/.plugins/com.ibm.imp.worklight.simulation.ui/projects/_MobileBrowserSimulator/WebContent" targetInArchive="/"/>
+    <dir sourceOnDisk="/Users/cla/Documents/workspace/TMP/Desenvolvimento/.metadata/.plugins/com.ibm.imp.worklight.simulation.ui/projects/_MobileBrowserSimulator/build/classes" targetInArchive="/WEB-INF/classes"/>
+</archive>

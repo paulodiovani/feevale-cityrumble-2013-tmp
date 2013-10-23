@@ -1,0 +1,354 @@
+{"platforms":[
+	{
+		"id":"platform.other",
+		"name":"Other",
+		"defaultLayoutWidth":800
+	},
+	{
+		"id":"platform.blackberry",
+		"name":"Blackberry",
+		"defaultLayoutWidth":800
+	},
+	{
+		"id":"platform.android",
+		"name":"Android",
+		"defaultLayoutWidth":800
+	},
+	{
+		"id":"platform.windows8",
+		"name":"Windows 8",
+		"defaultLayoutWidth":800
+	},
+	{
+		"id":"platform.windowsphone",
+		"name":"Windows Phone",
+		"defaultLayoutWidth":800
+	},
+	{
+		"id":"platform.ios.ipad",
+		"name":"iOS - iPad",
+		"defaultLayoutWidth":800
+	},
+	{
+		"id":"platform.ios.iphone",
+		"name":"iOS - iPhone",
+		"defaultLayoutWidth":980
+	}
+],
+"devices":[
+	{
+		"name":"ASUS VivoTab Smart",
+		"agentID":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 Safari/537.15",
+		"platformID":"platform.windows8",
+		"width":768,
+		"height":1368,
+		"ppi":155,
+		"viewportDeviceWidth":801
+	},
+	{
+		"name":"Amazon Kindle Fire 2",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.0.3; en-; KFOT Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
+		"platformID":"platform.android",
+		"width":600,
+		"height":1024,
+		"ppi":170,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Amazon Kindle Fire HD 8.9",
+		"agentID":"Mozilla/5.0 (Linux; Android 4.0.4; KFJWI Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19",
+		"platformID":"platform.android",
+		"width":1200,
+		"height":1920,
+		"ppi":254,
+		"viewportDeviceWidth":706
+	},
+	{
+		"name":"Apple iPad 2",
+		"agentID":"Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; xx-xx) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7D11",
+		"platformID":"platform.ios.ipad",
+		"width":768,
+		"height":1024,
+		"ppi":132,
+		"viewportDeviceWidth":770
+	},
+	{
+		"name":"Apple iPad Mini",
+		"agentID":"Mozilla/5.0 (iPad; CPU OS 6_0_2 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A550 Safari/8536.25",
+		"platformID":"platform.ios.ipad",
+		"width":768,
+		"height":1024,
+		"ppi":162,
+		"viewportDeviceWidth":627
+	},
+	{
+		"name":"Apple iPad3",
+		"agentID":"Mozilla/5.0 (iPad; U; CPU iPhone OS 3_2 like Mac OS X; xx-xx) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7D11",
+		"platformID":"platform.ios.ipad",
+		"width":1536,
+		"height":2048,
+		"ppi":264,
+		"viewportDeviceWidth":770
+	},
+	{
+		"name":"Apple iPhone 4",
+		"agentID":"Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; xx-xx) AppleWebKit/532.9 (KHTML, like Gecko) Mobile/7D11",
+		"platformID":"platform.ios.iphone",
+		"width":640,
+		"height":960,
+		"ppi":330,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Apple iPhone 4S",
+		"agentID":"Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Mobile/9A334",
+		"platformID":"platform.ios.iphone",
+		"width":640,
+		"height":960,
+		"ppi":330,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Apple iPhone 5",
+		"agentID":"Mozilla/5.0 (iPhone; CPU iPhone OS 6_0_1 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A525 Safari/8536.25",
+		"platformID":"platform.ios.iphone",
+		"width":640,
+		"height":1136,
+		"ppi":326,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Blackberry Bold 9930",
+		"agentID":"Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0 Mobile Safari/534.11+",
+		"platformID":"platform.blackberry",
+		"width":480,
+		"height":640,
+		"ppi":286,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Blackberry Curve 9315",
+		"agentID":"Mozilla/5.0 (BlackBerry; U; BlackBerry 9315; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.396 Mobile Safari/534.11+",
+		"platformID":"platform.blackberry",
+		"width":320,
+		"height":240,
+		"ppi":164,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Blackberry Z10",
+		"agentID":"Mozilla/5.0 (BB10; Touch) AppleWebKit/537.10+ (KHTML, like Gecko) Version/10.0.9.2372 Mobile Safari/537.10+",
+		"platformID":"platform.blackberry",
+		"width":768,
+		"height":1280,
+		"ppi":355,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Google Nexus 10",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.1; en-us; manta Build/JOO26B) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
+		"platformID":"platform.android",
+		"width":1600,
+		"height":2560,
+		"ppi":300,
+		"viewportDeviceWidth":797
+	},
+	{
+		"name":"Google Nexus 4",
+		"agentID":"Mozilla/5.0 (Linux; Android 4.2.1; Nexus 4 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19",
+		"platformID":"platform.android",
+		"width":768,
+		"height":1280,
+		"ppi":318,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Google Nexus 7",
+		"agentID":"Mozilla/5.0 (Linux; Android 4.1; Nexus 7 Build/JRN84D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Safari/535.19",
+		"platformID":"platform.android",
+		"width":800,
+		"height":1280,
+		"ppi":216,
+		"viewportDeviceWidth":555
+	},
+	{
+		"name":"HTC One S",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; Tuna Build/IFK77E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+		"platformID":"platform.android",
+		"width":540,
+		"height":960,
+		"ppi":256,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"HTC One V",
+		"agentID":"Mozilla/5.0 (Linux; Android 4.0.3; HTC One V Build/IML74K) AppleWebKit/535.19 (KHTML like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19",
+		"platformID":"platform.android",
+		"width":480,
+		"height":800,
+		"ppi":252,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"HTC One X",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; Tuna Build/IFK77E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+		"platformID":"platform.android",
+		"width":720,
+		"height":1280,
+		"ppi":312,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"HTC Radar 4G",
+		"agentID":"Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar 4G)",
+		"platformID":"platform.windowsphone",
+		"width":480,
+		"height":800,
+		"ppi":246,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"HTC WindowsPhone 8x",
+		"agentID":"Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; HTC; 0002)",
+		"platformID":"platform.windowsphone",
+		"width":720,
+		"height":1280,
+		"ppi":342,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"LG Enlighten VS700",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; LG-VS700 Build/GRJ22) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+		"platformID":"platform.android",
+		"width":320,
+		"height":480,
+		"ppi":180,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Lenovo ThinkPad Tablet 2",
+		"agentID":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 Safari/537.15",
+		"platformID":"platform.windows8",
+		"width":768,
+		"height":1368,
+		"ppi":155,
+		"viewportDeviceWidth":801
+	},
+	{
+		"name":"Motorola Droid Bionic",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; DROID BIONIC 4G Build/5.5.1_84_DBN-55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+		"platformID":"platform.android",
+		"width":540,
+		"height":960,
+		"ppi":256,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Motorola Droid RAZR MAXX",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 2.2;) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2",
+		"platformID":"platform.android",
+		"width":540,
+		"height":960,
+		"ppi":256,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Nokia Lumia 820",
+		"agentID":"Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 820)",
+		"platformID":"platform.windowsphone",
+		"width":480,
+		"height":800,
+		"ppi":217,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Nokia Lumia 920",
+		"agentID":"Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; NOKIA; Lumia 920)",
+		"platformID":"platform.windowsphone",
+		"width":768,
+		"height":1280,
+		"ppi":332,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Samsung ATIV Smart PC Pro 700T",
+		"agentID":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.15 (KHTML, like Gecko) Chrome/24.0.1295.0 Safari/537.15",
+		"platformID":"platform.windows8",
+		"width":1080,
+		"height":1920,
+		"ppi":190,
+		"viewportDeviceWidth":920
+	},
+	{
+		"name":"Samsung Galaxy Nexus",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; Galaxy Nexus Build/IFL10C) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+		"platformID":"platform.android",
+		"width":720,
+		"height":1280,
+		"ppi":312,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Samsung Galaxy Note 2",
+		"agentID":"Android 4.1.1;AppleWebKit/530.17;Build/JRO03C;SGH-T889 Build/JRO03C",
+		"platformID":"platform.android",
+		"width":720,
+		"height":1280,
+		"ppi":267,
+		"viewportDeviceWidth":437
+	},
+	{
+		"name":"Samsung Galaxy Player 5.0",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; Nexus S Build/GRH41B) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+		"platformID":"platform.android",
+		"width":480,
+		"height":800,
+		"ppi":187,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Samsung Galaxy S Blaze 4G",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; Nexus S Build/GRH41B) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+		"platformID":"platform.android",
+		"width":480,
+		"height":800,
+		"ppi":235,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Samsung Galaxy S II",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; Tuna Build/IFK77E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+		"platformID":"platform.android",
+		"width":480,
+		"height":800,
+		"ppi":217,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Samsung Galaxy S III",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 4.0; xx-xx; Tuna Build/IFK77E) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",
+		"platformID":"platform.android",
+		"width":720,
+		"height":1280,
+		"ppi":306,
+		"viewportDeviceWidth":320
+	},
+	{
+		"name":"Samsung Galaxy Tab 10.1",
+		"agentID":"Mozilla/5.0 (Linux; U; Android 3.2; en-gb; GT-P7510 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13",
+		"platformID":"platform.android",
+		"width":800,
+		"height":1280,
+		"ppi":149,
+		"viewportDeviceWidth":801
+	},
+	{
+		"name":"WindowsPhone Samsung Focus2",
+		"agentID":"Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i667)",
+		"platformID":"platform.windowsphone",
+		"width":480,
+		"height":800,
+		"ppi":233,
+		"viewportDeviceWidth":320
+	}
+]}

@@ -1,0 +1,33 @@
+<form id="networkForm">
+	<input type="radio" name="networkType" value="none"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_none"></label> <br />
+	<input type="radio"
+		name="networkType" value="ethernet"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_ethernet"></label> <br />
+	<input
+		type="radio" name="networkType" checked value="wifi"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_wifi"></label> <br /> <input type="radio"
+		name="networkType" value="2g"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_2g"></label> <br />
+	<input type="radio"
+		name="networkType" value="3g"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_3g"></label> <br />
+	<input type="radio"
+		name="networkType" value="4g"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_4g"></label> <br />
+	<input type="radio"
+		name="networkType" value="cellular"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_cell"></label> <br />
+	<input type="radio"
+		name="networkType" value="unknown"
+		onChange="getService('Network Status').onChange(this.value);" /> <label
+		id="sim_network_unknown"></label> <br />
+</form>
+

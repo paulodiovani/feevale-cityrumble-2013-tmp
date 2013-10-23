@@ -1,0 +1,29 @@
+
+<table style="cellspacing: 10;">
+	<tr>
+		<td><label id="sim_accelerometer_accelX_label" for="accelX"></label>
+		</td>
+		<td><input type="text" name="accelX" value=""
+			data-dojo-type="dijit.form.TextBox" id="accelX" /></td>
+	</tr>
+	<tr>
+		<td><label id="sim_accelerometer_accelY_label" for="accelY"></label>
+		</td>
+		<td><input type="text" name="accelY" value=""
+			data-dojo-type="dijit.form.TextBox" id="accelY" /></td>
+	</tr>
+	<tr>
+		<td><label id="sim_accelerometer_accelZ_label" for="accelZ"></label>
+		</td>
+		<td><input type="text" name="accelZ" value=""
+			data-dojo-type="dijit.form.TextBox" id="accelZ" /></td>
+	</tr>
+</table>
+<button data-dojo-type="dijit.form.Button" type="button"
+	id="sim_accelerometer_nextAccel_button"
+	data-dojo-id="sim_accelerometer_nextAccel_button"
+	onClick="getService('Accelerometer').nextAccel();"></button>
+<button data-dojo-type="dijit.form.Button" type="button"
+	id="sim_accelerometer_startStop_button"
+	data-dojo-id="sim_accelerometer_startStop_button"
+	onClick="getService('Accelerometer').startStopTimer();"></button>

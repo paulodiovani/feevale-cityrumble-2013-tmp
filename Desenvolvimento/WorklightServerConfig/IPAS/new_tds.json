@@ -1,0 +1,27 @@
+{
+	"layers_nodes": "TDS",
+	
+	"model_nodes":  {
+            "groups": {
+            },
+            "attributes": {
+               "LDIF_FILE": "artifacts/ldap-counter.ldif",
+               "GROUP_FILTER": "(|(objectclass=groupOfNames)(objectclass=groupOfUniqueNames))",
+               "USER_FILTER": "(objectclass=ePerson)",
+               "TDS_BASE_DN": "o=acme,c=us"
+            },
+            "type": "TDS",
+            "id": "TDS"
+     },
+	
+	"model_links":   {
+        "target": "TDS",
+        "groups": {
+        },
+        "attributes": {
+        },
+        "type": "WORKLIGHT2LDAPLink",
+        "source": "Worklight Configuration",
+        "id": "WORKLIGHT2LDAPLink_1"
+     }
+}
