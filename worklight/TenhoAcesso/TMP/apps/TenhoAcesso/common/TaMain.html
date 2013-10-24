@@ -37,27 +37,31 @@
 </head>
     	<body id="content" style="display: none;">
     		<div data-role="page" id="TaMain">
-		<div data-role="content">teste</div>
-		<div data-role="content" id="pageContent" style="height: 40%; width: 45%; float: left; background-color: silver"></div>
-		<div data-role="content" id="pageContent0" style="height: 40%; width: 45%; float: left; background-color: silver"></div>
-		<div data-role="content" id="pageContent1" style="height: 30%; width: 100%; background-color: silver"></div>
-
-		<div data-role="content" id="pageContent"
-			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
-		<div data-role="content" id="pageContent"
-			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
-		<div data-role="content" id="pageContent"
-			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
-		<div data-role="content" id="pageContent"
-			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
+		<div data-role="content"></div>
+		<div class="ui-grid-a" style="height: 100%; width: 100%">
+			<div class="ui-block-a">
+				<a href="#TaLocal" data-role="button" id="button">Button</a>
+			</div>
+			<div class="ui-block-b">
+				<a href="#" data-role="button" id="button1">Button</a>
+			</div>
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b">
+				<a href="#" data-role="button" id="button0">Button</a>
+			</div>
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"></div>
+			<div class="ui-block-a"></div>
+			<div class="ui-block-b"></div>
+		</div>
 	</div>
 	<div data-role="page" id="TaLocal">
 		<div data-role="content"></div>
 		<ul data-role="listview" id="listview" data-inset="true">
 			<li data-role="list-divider" id="divider">Divider</li>
-			<li id="listitem"><a href="#">Item</a></li>
-			<li id="listitem0"><a href="#">Item</a></li>
-			<li id="listitem1"><a href="#">Item</a></li>
+			<li id="listitem">Item</li>
+			<li id="listitem0">Item</li>
+			<li id="listitem1">Item</li>
 		</ul>
 	</div>
 	<div data-role="page" id="TaAvalia" class="switch_panel">
