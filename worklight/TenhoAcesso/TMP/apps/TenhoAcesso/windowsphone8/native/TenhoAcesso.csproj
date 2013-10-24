@@ -138,16 +138,12 @@
 <Content Include="www\default\common\js\base.js" />
 <Content Include="www\default\common\js\sjcl.min.js" />
 <Content Include="www\default\common\js\stacktrace.min.js" />
-<Content Include="www\default\common\js\wl_.min.js" />
 <Content Include="www\default\common\js\wlcommon.js" />
 <Content Include="www\default\common\js\wljq.js" />
+<Content Include="www\default\common\js\wl_.min.js" />
 <Content Include="www\default\css\TenhoAcesso.css" />
 <Content Include="www\default\images\icon.png" />
 <Content Include="www\default\images\thumbnail.png" />
-<Content Include="www\default\jqueryMobile\css\.DS_Store" />
-<Content Include="www\default\jqueryMobile\css\themes\.DS_Store" />
-<Content Include="www\default\jqueryMobile\css\themes\default\.DS_Store" />
-<Content Include="www\default\jqueryMobile\css\themes\default\images\.DS_Store" />
 <Content Include="www\default\jqueryMobile\css\themes\default\images\ajax-loader.gif" />
 <Content Include="www\default\jqueryMobile\css\themes\default\images\ajax-loader.png" />
 <Content Include="www\default\jqueryMobile\css\themes\default\images\icons-18-black.png" />
@@ -166,8 +162,6 @@
 <Content Include="www\default\js\initOptions.js" />
 <Content Include="www\default\js\messages.js" />
 <Content Include="www\default\js\TenhoAcesso.js" />
-<Content Include="www\default\TaAvalia.html" />
-<Content Include="www\default\TaLocal.html" />
 <Content Include="www\default\TaMain.html" />
 <Content Include="www\default\wlclient\css\wlclient.css" />
 <Content Include="www\default\wlclient\images\empty.gif" />

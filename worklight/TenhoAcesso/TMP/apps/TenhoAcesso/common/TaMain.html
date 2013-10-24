@@ -25,27 +25,46 @@
     		<script src="jqueryMobile/jquery.js"></script>
     		<script src="jqueryMobile/jquery.mobile-1.1.2.js"></script>
     		<script src="jqueryMobile/jquery.mobile-1.1.2.min.js"></script>
-    		
     		<script>
-        	$(function(){
-        		$("#btncall").click(function(){
-            		$("#page").load("TaLocal.html", function(){
-                		alert("loaded!");
-            		});
-        		});
-        	});
+			
     		</script>
-    	</head>
+<style type="text/css">
+.switch_panel div.ui-slider-switch {
+	position: absolute;
+	right: 0;
+}
+</style>
+</head>
     	<body id="content" style="display: none;">
-    		<div data-role="page" id="page">
-    			<div data-role="content" style="padding: 15px">
-    				<!--application UI goes here-->
-    				TenhoAcesso
-    			</div>
-		<a href="#" data-role="button" id="button" name="btncall">Chama local pizzaria do zezinho</a><a
-			href="#" data-role="button" id="button0">chama local teatro municipal</a>
+    		<div data-role="page" id="TaMain">
+		<div data-role="content">teste</div>
+		<div data-role="content" id="pageContent" style="height: 40%; width: 45%; float: left; background-color: silver"></div>
+		<div data-role="content" id="pageContent0" style="height: 40%; width: 45%; float: left; background-color: silver"></div>
+		<div data-role="content" id="pageContent1" style="height: 30%; width: 100%; background-color: silver"></div>
+
+		<div data-role="content" id="pageContent"
+			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
+		<div data-role="content" id="pageContent"
+			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
+		<div data-role="content" id="pageContent"
+			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
+		<div data-role="content" id="pageContent"
+			style="height: 15%; width: 45%; float: left; background-color: silver"></div>
 	</div>
-    		<script src="js/initOptions.js"></script>
+	<div data-role="page" id="TaLocal">
+		<div data-role="content"></div>
+		<ul data-role="listview" id="listview" data-inset="true">
+			<li data-role="list-divider" id="divider">Divider</li>
+			<li id="listitem"><a href="#">Item</a></li>
+			<li id="listitem0"><a href="#">Item</a></li>
+			<li id="listitem1"><a href="#">Item</a></li>
+		</ul>
+	</div>
+	<div data-role="page" id="TaAvalia" class="switch_panel">
+		<div data-role="content" style="padding: 15px">
+		</div>
+	</div>
+	<script src="js/initOptions.js"></script>
     		<script src="js/TenhoAcesso.js"></script>
     		<script src="js/messages.js"></script>
     	</body>

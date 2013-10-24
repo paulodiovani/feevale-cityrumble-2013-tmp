@@ -33,7 +33,7 @@
         <key>Key</key>
         <string>serverURL</string>
         <key>DefaultValue</key>
-        <string>http://10.1.1.3:10080/TMP/</string>
+        <string>http://192.168.5.45:10080/TMP/</string>
         <key>KeyboardType</key>
         <string>Alphabet</string>
       </dict>

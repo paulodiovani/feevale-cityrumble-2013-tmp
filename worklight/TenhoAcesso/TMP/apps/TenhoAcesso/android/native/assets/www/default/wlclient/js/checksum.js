@@ -1,2 +1,2 @@
-var WL_CHECKSUM = {"checksum":727183975,"date":1382573603404,"machine":"clas-MacBook-Pro.local"};
-/* Date: Wed Oct 23 17:13:23 PDT 2013 */
+var WL_CHECKSUM = {"checksum":924605689,"date":1382643081813,"machine":"ADM_INF_002391"};
+/* Date: Thu Oct 24 17:31:21 BRST 2013 */
