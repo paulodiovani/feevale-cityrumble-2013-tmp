@@ -1,0 +1,49 @@
+html {
+    background: gray;
+}
+
+body {
+    width: 320px;
+    height: 480px;
+    background: white;
+    margin: 20px auto;
+}
+
+#container {
+    position: relative;
+    width: 320px;
+    height: 480px;
+
+    overflow: auto;
+}
+
+.place {
+    float: left;
+    padding: 2px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.place.large {
+    width: 50%;
+    height: 200px;
+}
+
+.place.medium {
+    width: 75%;
+    height: 50px;
+}
+
+.place.small {
+    width: 25%;
+    height: 100px;
+}
+
+.place .content {
+    width: 100%;
+    height: 100%;
+    background: #006600;
+}
