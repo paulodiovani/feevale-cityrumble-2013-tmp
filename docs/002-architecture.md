@@ -1,99 +1,54 @@
 # Database
 
-> Sugestão: Utilizar NoSQL, possivelente Amazon DynamoDB
->
-> _Obs: acredito que a estrutura apresentada a seguir é pouco útil para NoSQL, especialmente para DynamoDB, que utiliza um máximo de duas chaves. Dessa forma, o modelo de dados deverá ser repensado em breve._
     
 ## Lista de objetos
 
 ### Usuários
 
-Objeto de usuário.
+Tabela de usuários.
 
 Possivelmente este objeto terá associações por perfis, como seu perfil em redes sociais (Facebook, Foursquare, etc.). Por hora vamos deixar bem simples.
 
-| user  |
-| ----- |
-| id    |
-| name  |
-| email |
+Inclui lista (`array`) de deficiências (_Ex: cegueira, baixa visão, cadeirante, etc._).
 
-### Categorias
+| user           |
+| -------------- |
+| username       |
+| name           |
+| email          |
+| disabilities[] |
 
-Objeto de categorias, para listar as categorias de locais.
-
-_Ex: restaurantes, casas noturnas, estacionamentos_
-
-| categories |
-| ---------- |
-| id         |
-| parent_id  |
-| name       |
 
 ### Locais
 
-Objeto de locais, contendo o endereço e outros dados.
+Tabela de locais, contendo o endereço e outros dados.
 
-| places  |
-| ------- |
-| id      |
-| name    |
-| address |
+Inclui lista de categorias do local (_Ex: restaurantes, casas noturnas, estacionamentos_).
 
-### Locais por categoria
+Inclui lista de opções para deficientes disponíveis no local (veja abaixo), o que será, 
+provavelmente, o mais importante da aplicação, pois dará mais _peso_ aos locais, 
+dependendo do perfil do usuário e sua(s) deficiência(s).
 
-Associação n/n entre locais e suas categorias.
+| places                     |
+| -------------------------- |
+| name                       |
+| address                    |
+| categories[]               |
+| disabilities_options_ids[] |
 
-| place_categories |
-| ---------------- |
-| id               |
-| category_id      |
-| place_id         |
-
-### Deficiências
-
-Objeto de deficiências.
-
-Será responsável por classificar as opções para deficientes dos locais.
-
-_Ex: cegueira, baixa visão, cadeirante, etc._
-
-| disabilities |
-| ------------ |
-| id           |
-| description  |
 
 ### Opções para deficientes
 
-Objeto que lista as opções disponíveis para deficientes nos locais.
+Tabela que lista as opções disponíveis para deficientes nos locais.
 
 _Ex: Banheiro adaptado, piso tátil, etc._
 
+Inclui o tipo de deficiência (_Ex: cegueira, baixa visão, cadeirante, etc._).
+
 | disabilities_options |
 | -------------------- |
+| disability           |
 | id                   |
-| disability_id        |
 | description          |
 
-### Opções em locais
-
-Opções para deficientes disponíveis nos locais visitados.
-
-Este objeto será, provavelmente, o mais importante da aplicação. O qual dará mais _peso_ aos locais, dependendo do perfil do usuário e sua(s) deficiência(s).
-
-| local_options |
-| ------------- |
-| id            |
-| local_id      |
-| option_id     |
-
-### Necessidades de Usuários
-
-Opção para vincular as Necessidades aos Usuários. 
-
-| user_disabilities |
-| ----------------- |
-| id                |
-| user_id           |
-| disability_id     |
 
