@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TMP">
+        <wb-resource deploy-path="/" source-path="/apps/tmp/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/tmp/windowsphone8"/>
+        <wb-resource deploy-path="/" source-path="/apps/tmp/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/tmp/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/TenhoAcesso/common"/>
+        <wb-resource deploy-path="/" source-path="/apps/TenhoAcesso/iphone"/>
+        <wb-resource deploy-path="/" source-path="/apps/TenhoAcesso/android"/>
+        <wb-resource deploy-path="/" source-path="/apps/TenhoAcesso/mobilewebapp"/>
+        <wb-resource deploy-path="/" source-path="/apps/TenhoAcesso/windowsphone8"/>
+        <property name="context-root" value="TMP"/>
+    </wb-module>
+</project-modules>
