@@ -1,0 +1,6 @@
+bin/*
+apps/TenhoAcesso/android/native/assets/*
+apps/TenhoAcesso/android/native/bin/*
+apps/TenhoAcesso/android/native/gen/*
+apps/TenhoAcesso/iphone/native/*
+apps/TenhoAcesso/windowsphone8/native/*
