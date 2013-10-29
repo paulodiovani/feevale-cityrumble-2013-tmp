@@ -1,3 +1,6 @@
+Observações para leitura:
+* Quando falo _"este repositório"_, me refiro à cópia local, baixada no computador (resultado de um `git clone`).
+
 # Como importar o projeto no Worklight
 
 Um breve _Hoe To_ de como importar o projeto do _TMP_ para começar a trabalhá-lo no _IBM Worklight_.
