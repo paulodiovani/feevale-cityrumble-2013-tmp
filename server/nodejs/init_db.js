@@ -12,8 +12,10 @@ var MongoClient = require('mongodb').MongoClient;
 MongoClient.connect('mongodb://127.0.0.1:27017/tenho_acesso', function(err, db) {
     if(err) throw err;
 
-    //insere os registros iniciais, a partir dos modulos criados para cada collection
-    require('./init_db/users').init(db);
+    var User = require('./init_db/users');
 
-    db.close();
+    //insere os registros iniciais, a partir dos modulos criados para cada collection
+    User.init(db, function() {
+        db.close(); //fechar a conexão deve ser a última ação, ou seja estar dentro do último nível de callback
+    });
 });
