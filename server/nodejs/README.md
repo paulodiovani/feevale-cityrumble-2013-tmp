@@ -28,3 +28,15 @@ Para inicializar a base de dados (MongoDB) execute:
 Note que, até o momento, já há verificação dos registros na base, 
 sendo assim, se executaro o script mais de uma vez, os registros 
 serão duplicados.
+
+# IBM Websphere Workarea
+
+Este diretório também deve funcionar como workarea para o servidor IBM Websphere (o que roda os 
+Adapters do Worklight) e é configurado no aquivo `web.xml` da pasta `websphere/` (veja o README 
+da mesma para detalhes).
+
+Basicamente, isto é necessário apenas pelas  dependências do Node.js para os Adapters,
+que são listadas no arquivo `packages.json` instaladas com o comando `npm install`.
+
+Se preferir, você pode criar o _workarea_ em qualquer diretório acessível e instalar os
+módulos do node.js necessários.
