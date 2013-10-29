@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Licensed Materials - Property of IBM
+    5725-G92 (C) Copyright IBM Corp. 2011, 2013. All Rights Reserved.
+    US Government Users Restricted Rights - Use, duplication or
+    disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<wl:adapter name="UserAdapter"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:wl="http://www.worklight.com/integration"
+	xmlns:node="http://www.worklight.com/integration/node">
+
+	<displayName>UserAdapter</displayName>
+	<description>UserAdapter</description>
+	<connectivity>
+		<connectionPolicy xsi:type="node:NodeHTTPConnectionPolicyType">
+			<!-- An optional parameter to run the adapter in debug mode on the specified port  
+			<debugPort>5838</debugPort>
+			-->
+		</connectionPolicy>
+		<loadConstraints maxConcurrentConnectionsPerNode="20" />
+	</connectivity>
+
+	<procedure name="getUserData"/>
+</wl:adapter>
