@@ -1,75 +1,49 @@
 <!DOCTYPE HTML>
 <html>
-    	<head>
-    		<meta charset="UTF-8">
-    		<title>TenhoAcesso</title>
-    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-    		<link rel="shortcut icon" href="images/favicon.png">
-    		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    		<link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.css" rel="stylesheet">
-    		<link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.min.css" rel="stylesheet">
-    		<link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.min.css" rel="stylesheet">
-    		<link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.min.css" rel="stylesheet">
-    		<link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.css" rel="stylesheet">
-    		<link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.css" rel="stylesheet">
-    		<link rel="stylesheet" href="css/TenhoAcesso.css">
-    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.1.2.css">
-    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.1.2.min.css">
-    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.structure-1.1.2.css">
-    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.structure-1.1.2.min.css">
-    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.theme-1.1.2.css">
-    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.theme-1.1.2.min.css">
-    		<script>window.$ = window.jQuery = WLJQ;</script>
-    		<script src="jqueryMobile/js/jquery.js"></script>
-    		<script src="jqueryMobile/js/jquery.mobile-1.1.2.js"></script>
-    		<script src="jqueryMobile/jquery.js"></script>
-    		<script src="jqueryMobile/jquery.mobile-1.1.2.js"></script>
-    		<script src="jqueryMobile/jquery.mobile-1.1.2.min.js"></script>
-    		<script>
-			
-    		</script>
-<style type="text/css">
-.switch_panel div.ui-slider-switch {
-	position: absolute;
-	right: 0;
-}
-</style>
+        <head>
+            <meta charset="UTF-8">
+            <title>TenhoAcesso</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+            <link rel="shortcut icon" href="images/favicon.png">
+            <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+            <link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.css" rel="stylesheet">
+            <link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.css" rel="stylesheet">
+            <link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.css" rel="stylesheet">
+            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.min.css" rel="stylesheet"> -->
+            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.min.css" rel="stylesheet"> -->
+            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.min.css" rel="stylesheet"> -->
+
+            <link rel="stylesheet" href="css/TenhoAcesso.css">
+
+            <!-- <script>window.$ = window.jQuery = WLJQ;</script> -->
+            <script src="jqueryMobile/js/jquery.js"></script>
+            <script src="jqueryMobile/js/jquery.mobile-1.1.2.js"></script>
+            <!-- <script src="jqueryMobile/js/jquery.mobile-1.1.2.min.js"></script> -->
+
+            <style type="text/css">
+            .switch_panel div.ui-slider-switch {
+                position: absolute;
+                right: 0;
+            }
+            </style>
 </head>
-    	<body id="content" style="display: none;">
-    		<div data-role="page" id="TaMain">
-		<div data-role="content"></div>
-		<div class="ui-grid-a" style="height: 100%; width: 100%">
-			<div class="ui-block-a">
-				<a href="#TaLocal" data-role="button" id="button">Button</a>
-			</div>
-			<div class="ui-block-b">
-				<a href="#" data-role="button" id="button1">Button</a>
-			</div>
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b">
-				<a href="#" data-role="button" id="button0">Button</a>
-			</div>
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"></div>
-			<div class="ui-block-a"></div>
-			<div class="ui-block-b"></div>
+    <body id="content" style="display: none;">
+    
+	<div data-role="page" id="TaMenu">
+		<div data-role="content">
+			<ul data-role="listview" id="listview" data-inset="true">
+				<li data-role="list-divider" id="divider">Opções</li>
+				<li id="listitem"><a href="#">Meus dados</a></li>
+				<li id="listitem0"><a href="#">Item</a></li>
+				<li id="listitem1"><a href="#">Item</a></li>
+			</ul>
 		</div>
-	</div>
-	<div data-role="page" id="TaLocal">
-		<div data-role="content"></div>
-		<ul data-role="listview" id="listview" data-inset="true">
-			<li data-role="list-divider" id="divider">Divider</li>
-			<li id="listitem">Item</li>
-			<li id="listitem0">Item</li>
-			<li id="listitem1">Item</li>
-		</ul>
-	</div>
-	<div data-role="page" id="TaAvalia" class="switch_panel">
-		<div data-role="content" style="padding: 15px">
-		</div>
-	</div>
-	<script src="js/initOptions.js"></script>
-    		<script src="js/TenhoAcesso.js"></script>
-    		<script src="js/messages.js"></script>
-    	</body>
+	</div>    
+    
+    <script src="js/initOptions.js"></script>
+    <script src="js/TenhoAcesso.js"></script>
+    <script src="js/messages.js"></script>
+
+</body>
 </html>
