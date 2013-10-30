@@ -16,13 +16,7 @@
     <mainFile>TaMain.html</mainFile>
     <features/>
     <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
-    <iphone bundleId="com.TenhoAcesso" version="1.0">
-        <worklightSettings include="true"/>
-        <security>
-            <encryptWebResources enabled="false"/>
-            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
-        </security>
-    </iphone>
+    
     <android version="1.0">
         <worklightSettings include="true"/>
         <security>
@@ -31,8 +25,6 @@
             <publicSigningKey>Replace this text with the actual public signing key of the certificate used to sign the APK, available by using the 'Extract public signing key' wizard.</publicSigningKey>
         </security>
     </android>
-    <windowsPhone8 version="1.0">
-        <uuid>405cdc72-2174-424a-b5ae-b69de8836993</uuid>
-    </windowsPhone8>
+    
     <mobileWebApp cacheManifest="no-use" version="1.0"/>
 </application>
