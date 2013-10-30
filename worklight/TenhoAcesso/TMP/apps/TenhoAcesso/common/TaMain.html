@@ -30,18 +30,48 @@
 </head>
     <body id="content" style="display: none;">
     
+    <!-- página do menu da aplicação, contendo atalhos para 
+         todas as demais páginas -->
 	<div data-role="page" id="TaMenu">
 		<div data-role="content">
-			<ul data-role="listview" id="listview" data-inset="true">
-				<li data-role="list-divider" id="divider">Opções</li>
-				<li id="listitem"><a href="#">Meus dados</a></li>
-				<li id="listitem0"><a href="#">Item</a></li>
-				<li id="listitem1"><a href="#">Item</a></li>
+			<ul data-role="listview" id="menu-listview" data-inset="true">
+				<li data-role="list-divider">Opções</li>
+				<li id="menu-user-data"><a href="#TaUser">Meus dados</a></li>
 			</ul>
 		</div>
-	</div>    
-    
-    <script src="js/initOptions.js"></script>
+	</div>
+	
+    <!-- Página de dados do usuário/perfil -->
+	<div data-role="page" id="TaUser">
+        <div data-role="navbar" class="navbar">
+            <ul>
+                <li><a href="#TaMenu" id="item">Opções</a></li>
+            </ul>
+        </div>
+		
+		<div data-role="content">
+			<table class="userdata">
+                <tr class="name">
+                    <th>Nome</th>
+                    <td><span data-property="firstname"></span> <span data-property="lastname"></span></td>
+                </tr>
+                <tr class="email">
+                    <th>E-mail</th>
+                    <td><span data-property="email"></span></td>
+                </tr>
+                <tr class="disabilities">
+                    <th>Deficiências</th>
+                    <td>
+                        <ul>
+                            <li data-repeat="disabilities"></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+		</div>
+	</div>
+
+	<script src="js/initOptions.js"></script>
     <script src="js/TenhoAcesso.js"></script>
     <script src="js/messages.js"></script>
 
