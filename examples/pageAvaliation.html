@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>TenhoAcesso</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+            <link rel="shortcut icon" href="images/favicon.png">
+            <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+            <link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.css" rel="stylesheet">
+            <link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.css" rel="stylesheet">
+            <link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.css" rel="stylesheet">
+            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.min.css" rel="stylesheet"> -->
+            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.min.css" rel="stylesheet"> -->
+            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.min.css" rel="stylesheet"> -->
+
+            <link rel="stylesheet" href="css/TenhoAcesso.css">
+
+            <!-- <script>window.$ = window.jQuery = WLJQ;</script> -->
+            <script src="jqueryMobile/js/jquery.js"></script>
+            <script src="jqueryMobile/js/jquery.mobile-1.1.2.js"></script>
+            <!-- <script src="jqueryMobile/js/jquery.mobile-1.1.2.min.js"></script> -->
+
+            <style type="text/css">
+            .switch_panel div.ui-slider-switch {
+                position: absolute;
+                right: 0;
+            }
+            </style>
+      </head>
+      <body id="content" style="display: none;">
+          <!-- página do menu da aplicação, contendo atalhos para 
+               todas as demais páginas -->
+        	<div data-role="page" id="TaMenu">
+        		<div data-role="content">
+        			<ul data-role="listview" id="menu-listview" data-inset="true">
+        				<li data-role="list-divider">Opções</li>
+        				<li id="menu-user-data"><a href="#TaUser">Meus dados</a></li>
+        			</ul>
+        		</div>
+        	</div>
+          <!-- Página de dados do usuário/perfil -->
+        	<div data-role="page" id="TaUser">
+                <div data-role="navbar" class="navbar">
+                    <ul>
+                        <li><a href="#TaMenu" id="item">Opções</a></li>
+                    </ul>
+                </div>
+		            <div data-role="content">
+			            <table class="userdata">
+                    <tr class="name">
+                      <th>Nome</th>
+                          <td><span data-property="firstname"></span> <span data-property="lastname"></span></td>
+                      </tr>
+                      <tr class="email">
+                          <th>E-mail</th>
+                          <td><span data-property="email"></span></td>
+                      </tr>
+                      <tr class="disabilities">
+                          <th>Deficiências</th>
+                          <td>
+                              <ul>
+                                  <li data-repeat="disabilities"></li>
+                              </ul>
+                          </td>
+                      </tr>
+                  </table>
+	            </div>
+	        </div>
+	      <div data-role="page" id="TaAvaliacao">
+		    <div data-role="fieldcontain">
+			      <label for="flip-a">GOSTOU DO LOCAL?</label>
+			      <select name="slider" id="flip-a" data-role="slider">
+				      <option value="s"> Sim </option>
+				      <option value="n"> Não </option>
+			      </select>
+		    </div>
+		    <div data-role="collapsible" id="collapsible">
+			      <h3>Possui adaptações:</h3>
+				      <label><input type="checkbox" name="checkbox-0" /> Rampa </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Mesas </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Sanitários </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Entrada/Saída </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Estacionamento </label>
+		    </div>
+	      </div>
+	      <script src="js/initOptions.js"></script>
+        <script src="js/TenhoAcesso.js"></script>
+        <script src="js/messages.js"></script>
+    </body>
+</html>
