@@ -36,7 +36,11 @@ MongoClient.connect('mongodb://127.0.0.1:27017/tenho_acesso', function(err, db) 
     }
 
     function init_categories() {
-        Place.init_categories(db, close_db);
+        Place.init_categories(db, init_4sq_categories);
+    }
+
+    function init_4sq_categories() {
+        Place.init_4sq_categories(db, close_db);
     }
 
     function close_db() {
