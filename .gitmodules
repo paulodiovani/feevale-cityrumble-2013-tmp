@@ -1,0 +1,3 @@
+[submodule "server/nodejs/foursquarevenues"]
+	path = server/nodejs/foursquarevenues
+	url = https://github.com/paulodiovani/foursquarevenues.git
