@@ -11,7 +11,7 @@ Possivelmente este objeto terá associações por perfis, como seu perfil em red
 
 Inclui lista (`array`) de deficiências (_Ex: cegueira, baixa visão, cadeirante, etc._).
 
-| user           |
+| users          |
 | -------------- |
 | username       |
 | name           |
@@ -31,11 +31,24 @@ dependendo do perfil do usuário e sua(s) deficiência(s).
 
 | places                     |
 | -------------------------- |
+| foursquare_id              |
 | name                       |
-| address                    |
+| contact                    |
+| location                   |
 | categories[]               |
-| disabilities_options_ids[] |
+| disabilities_options[]     |
 
+
+### Categories de locais
+
+Tabela de categorias.
+
+| categories                 |
+| -------------------------- |
+| foursquare_id              |
+| name                       |
+| icon                       |
+| categories[]               |
 
 ### Opções para deficientes
 
@@ -48,7 +61,27 @@ Inclui o tipo de deficiência (_Ex: cegueira, baixa visão, cadeirante, etc._).
 | disabilities_options |
 | -------------------- |
 | disability           |
-| id                   |
 | description          |
 
 
+### Pesquisas do usuário
+
+Tabela com as últimas pesquisas realizadas pelo usuário.
+
+Tem por finalidade manter um cache para evitar requisições repetidas aos serviços do foursquare.
+
+* O campo `type` especifica o tipo de pesquisa, se por categoria ou local.
+* O campo `category_id` especifica a categoria usada na pesquisa, se for uma pesquisa por local (ou por sub-categoria).
+* O campo `timespamp` determina por quanto tempo a pesquisa é válida antes de ser sobrescrita (não deve ser mais do que 1 ou 2 minutos).
+* O campo `results` guarda um array com os resultados da pesquisa, contendo neste o objeto encontrado e o peso dele na pesquisa.
+
+| user_searches |                     |
+| ------------- | ------------------- |
+| username      |                     |
+| type          |                     |
+| category_id   |                     |
+| ll            |                     |
+| timestamp     |                     |
+| results[]     | (category or place) |
+|               | distance            |
+|               | weight              |

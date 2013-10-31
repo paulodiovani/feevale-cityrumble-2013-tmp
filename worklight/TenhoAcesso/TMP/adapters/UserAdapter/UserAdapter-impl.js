@@ -12,7 +12,6 @@
  * Optional second parameter is a callback executed once the initialization is done.
  */
 MongoClient = require('mongodb').MongoClient;
-http = require("http");
 
 require("wl")
 .init({
@@ -26,7 +25,7 @@ function getUserData(WL, username) {
             return;
         }
 
-        var user = db.collection('user');
+        var user = db.collection('users');
 
         //busca um único usuário a partir do username
         user.findOne({"username": username}, function(e, result){

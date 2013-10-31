@@ -7,7 +7,7 @@ function getUserData() {
             return;
         }
 
-        var user = db.collection('user');
+        var user = db.collection('users');
 
         user.findOne({username: "silva"}, function(e, result){
             if(e) {
