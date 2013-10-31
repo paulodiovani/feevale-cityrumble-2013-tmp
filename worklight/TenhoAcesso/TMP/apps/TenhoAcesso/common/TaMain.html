@@ -27,6 +27,12 @@
                 right: 0;
             }
             </style>
+<style type="text/css">
+.switch_panel div.ui-slider-switch {
+	position: absolute;
+	right: 0;
+}
+</style>
 </head>
     <body id="content" style="display: none;">
     
@@ -39,6 +45,7 @@
 				<li id="menu-user-data"><a href="#TaUser">Meus dados</a></li>
 			</ul>
 		</div>
+		<a href="#TaLocal" data-role="button" id="button">chama local</a>
 	</div>
 	
     <!-- Página de dados do usuário/perfil -->
@@ -69,6 +76,52 @@
                 </tr>
             </table>
 		</div>
+	</div>
+	<div data-role="page" id="TaLocal" style="height: 100%">
+		<div data-role="content" style="height: 10%">
+			<img border="0" src="galeto-d-italia.jpg" width="100" height="100" style="height: 100%; width: 50%; margin-left: 25%">
+			<table style="padding-left: 1%; width: 79%;height:100%" border="0">
+				<tbody>
+					<tr>
+					</tr>
+						<td><h3>Galeto  D' Italia </h3></td>
+					<tr>
+						<td><h5> R. Benjamin Constant, 171</h5></td>
+					</tr>
+					<tr>
+						<td><h5>Novo Hamburgo</h5></td>
+					</tr>
+					<tr>
+						<td><h5>(51) 3595-1980 </h5></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<ul data-role="listview" id="listview" data-inset="true">
+			<li data-role="list-divider" id="divider">Divider</li>
+			<li id="listitem">Item</li>
+			<li id="listitem0">Item</li>
+			<li id="listitem1">Item</li>
+		</ul>
+		<a href="#TaAvaliacao" data-role="button" id="button0">Avaliar</a>
+	</div>
+	<div data-role="page" id="TaAvaliacao">
+		<div data-role="fieldcontain">
+			      <h3 for="flip-a" style="width: 70%">GOSTOU DO LOCAL?</h3><select
+				name="slider" id="flip-a" data-role="slider" style="width: 30%">
+				<option value="s">Sim</option>
+				<option value="n">Não</option>
+			</select>
+
+			</div>
+		    <div data-role="collapsible" id="collapsible">
+			      <h3>Possui adaptações:</h3>
+				      <label><input type="checkbox" name="checkbox-0" /> Rampa </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Mesas </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Sanitários </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Entrada/Saída </label>
+				      <label><input type="checkbox" name="checkbox-0" /> Estacionamento </label>
+		    </div>
 	</div>
 
 	<script src="js/initOptions.js"></script>
