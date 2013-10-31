@@ -17,9 +17,15 @@ Verique se os comandos `node` (ou `nodejs` se instalado pelos pacotes do Debian)
 
 # Scripts Node.js
 
-Para instalar as dependências dos scripts execute:
+Para instalar os módulos do Node.js que são dependências dos scripts execute:
 
     npm install
+
+Além das dependências instaladas pelo `npm`, existe uma dependência chamada `foursquarevenues`, que
+faz parte de outro repositório no GitHub, devendo ser baixada com os comandos a seguir:
+
+    git submodule init
+    git submodule update
 
 Para inicializar a base de dados (MongoDB) execute:
 
