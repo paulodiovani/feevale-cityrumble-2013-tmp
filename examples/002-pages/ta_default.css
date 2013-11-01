@@ -29,17 +29,9 @@
 
     overflow: hidden;
 
-    color: #FFFFFF /*{a-bar-color}*/;
+    color: #202020;
     font-weight: bold;
-    text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #444444 /*{a-bar-shadow-color}*/;
-    background: #f78f12 /*{a-bar-background-color}*/;
-    background-image: -webkit-gradient(linear, left top, left bottom, from( #FF9d13 /*{a-bar-background-start}*/), to( #de8010 /*{a-bar-background-end}*/)); /* Saf4 , Chrome */
-    background-image: -webkit-linear-gradient( #FF9d13 /*{a-bar-background-start}*/, #de8010 /*{a-bar-background-end}*/); /* Chrome 10 , Saf5.1  */
-    background-image:    -moz-linear-gradient( #FF9d13 /*{a-bar-background-start}*/, #de8010 /*{a-bar-background-end}*/); /* FF3.6 */
-    background-image:     -ms-linear-gradient( #FF9d13 /*{a-bar-background-start}*/, #de8010 /*{a-bar-background-end}*/); /* IE10 */
-    background-image:      -o-linear-gradient( #FF9d13 /*{a-bar-background-start}*/, #de8010 /*{a-bar-background-end}*/); /* Opera 11.10  */
-    background-image:         linear-gradient( #FF9d13 /*{a-bar-background-start}*/, #de8010 /*{a-bar-background-end}*/);
-
+    background:  #cacbcd;
 }
 
 .place .content.center {
