@@ -11,26 +11,26 @@
  * Init call starts the adapter's internal server, and performing necessary initialization.
  * Optional second parameter is a callback executed once the initialization is done.
  */
-MongoClient = require('mongodb').MongoClient;
-
 require("wl")
 .init({
     'getUserData': getUserData
 });
 
+var MongoClient = require('mongodb').MongoClient;
+
 function getUserData(WL, username) {
-    MongoClient.connect('mongodb://127.0.0.1:27017/tenho_acesso', function(e, db) {
-        if(e) {
-            WL.err(e.err);
+    MongoClient.connect('mongodb://127.0.0.1:27017/tenho_acesso', function(err, db) {
+        if(err) {
+            WL.err(err.err);
             return;
         }
 
         var user = db.collection('users');
 
         //busca um único usuário a partir do username
-        user.findOne({"username": username}, function(e, result){
-            if(e) {
-                WL.err(e.err);
+        user.findOne({"username": username}, function(err, result){
+            if(err) {
+                WL.err(err.err);
                 return;
             }
 

@@ -29,7 +29,7 @@ function wlCommonInit(){
     
     
     // Common initialization code goes here
-    $('#menu-user-data a').click(function() {
+    $('#menu-user-info a').click(function() {
         Ta.connect(Ta.getUserData);
     });
 

@@ -42,10 +42,11 @@
 		<div data-role="content">
 			<ul data-role="listview" id="menu-listview" data-inset="true">
 				<li data-role="list-divider">Opções</li>
-				<li id="menu-user-data"><a href="#TaUser">Meus dados</a></li>
+                <li id="menu-user-info"><a href="#TaUser">Meus dados</a></li>
+                <li id="menu-place-search"><a href="#TaSearch">Procurar locais</a></li>
+                <li id="menu-place-info"><a href="#TaLocal">Ver local (teste)</a></li>
 			</ul>
 		</div>
-		<a href="#TaLocal" data-role="button" id="button">chama local</a>
 	</div>
 	
     <!-- Página de dados do usuário/perfil -->
@@ -77,6 +78,11 @@
             </table>
 		</div>
 	</div>
+
+    <div data-role="page" id="TaSearch">
+    </div>
+
+    <!-- Página de informações do local -->
 	<div data-role="page" id="TaLocal" style="height: 100%">
 		<div data-role="content" style="height: 10%">
 			<img border="0" src="galeto-d-italia.jpg" width="100" height="100" style="height: 100%; width: 50%; margin-left: 25%">
@@ -105,10 +111,12 @@
 		</ul>
 		<a href="#TaAvaliacao" data-role="button" id="button0">Avaliar</a>
 	</div>
+
+    <!-- Página de avaliação do local pelo usuário -->
 	<div data-role="page" id="TaAvaliacao">
 		<div data-role="fieldcontain">
-			      <h3 for="flip-a" style="width: 70%">GOSTOU DO LOCAL?</h3><select
-				name="slider" id="flip-a" data-role="slider" style="width: 30%">
+			     <h3 for="flip-a" style="width: 70%">GOSTOU DO LOCAL?</h3>
+            <select name="slider" id="flip-a" data-role="slider" style="width: 30%">
 				<option value="s">Sim</option>
 				<option value="n">Não</option>
 			</select>
