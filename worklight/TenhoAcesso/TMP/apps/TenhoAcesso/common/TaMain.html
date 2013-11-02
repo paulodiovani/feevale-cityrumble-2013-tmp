@@ -7,20 +7,12 @@
             <link rel="shortcut icon" href="images/favicon.png">
             <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-            <link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.css" rel="stylesheet">
-            <link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.css" rel="stylesheet">
-            <link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.css" rel="stylesheet">
-            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile-1.1.2.min.css" rel="stylesheet"> -->
-            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile.structure-1.1.2.min.css" rel="stylesheet"> -->
-            <!-- <link href="jqueryMobile/css/themes/default/jquery.mobile.theme-1.1.2.min.css" rel="stylesheet"> -->
+            <link rel="stylesheet" href="jqueryMobile/css/themes/tmp-1.1.2.css" />
+            <link rel="stylesheet" href="jqueryMobile/css/jquery.mobile.structure-1.1.2.css" />
+            <script src="jqueryMobile/js/jquery-1.7.2.js"></script>
+            <script src="jqueryMobile/js/jquery.mobile-1.1.2.js"></script>
 
             <link rel="stylesheet" href="css/TenhoAcesso.css">
-
-            <!-- <script>window.$ = window.jQuery = WLJQ;</script> -->
-            <script src="jqueryMobile/js/jquery.js"></script>
-            <script src="jqueryMobile/js/jquery.mobile-1.1.2.js"></script>
-            <!-- <script src="jqueryMobile/js/jquery.mobile-1.1.2.min.js"></script> -->
-
             <style type="text/css">
             .switch_panel div.ui-slider-switch {
                 position: absolute;
@@ -29,8 +21,8 @@
             </style>
 <style type="text/css">
 .switch_panel div.ui-slider-switch {
-	position: absolute;
-	right: 0;
+    position: absolute;
+    right: 0;
 }
 </style>
 </head>
@@ -38,27 +30,30 @@
     
     <!-- página do menu da aplicação, contendo atalhos para 
          todas as demais páginas -->
-	<div data-role="page" id="TaMenu">
-		<div data-role="content">
-			<ul data-role="listview" id="menu-listview" data-inset="true">
-				<li data-role="list-divider">Opções</li>
-                <li id="menu-user-info"><a href="#TaUser">Meus dados</a></li>
-                <li id="menu-place-search"><a href="#TaSearch">Procurar locais</a></li>
-                <li id="menu-place-info"><a href="#TaLocal">Ver local (teste)</a></li>
-			</ul>
-		</div>
-	</div>
-	
-    <!-- Página de dados do usuário/perfil -->
-	<div data-role="page" id="TaUser">
-        <div data-role="navbar" class="navbar">
-            <ul>
-                <li><a href="#TaMenu" id="item">Opções</a></li>
+    <div data-role="page" id="TaMenu" data-theme="a">
+        <div data-role="header">
+            <h1>Tenho acesso</h1>
+            <a href="index.html" data-icon="gear" class="ui-btn-right">opções</a>
+        </div>
+
+        <div data-role="content">
+            <ul data-role="listview" id="menu-listview" data-inset="true" data-divider-theme="a">
+                <li id="menu-user-info" ><a href="#TaUser">Meus dados</a></li>
+                <li id="menu-place-search" ><a href="#TaSearch">Procurar locais</a></li>
+                <li id="menu-place-info" ><a href="#TaLocal">Ver local (teste)</a></li>
             </ul>
         </div>
-		
-		<div data-role="content">
-			<table class="userdata">
+    </div>
+    
+    <!-- Página de dados do usuário/perfil -->
+    <div data-role="page" id="TaUser" data-theme="a">
+        <div data-role="header">
+            <h1>Meus dados</h1>
+            <a href="index.html" data-icon="gear" class="ui-btn-right">opções</a>
+        </div>
+        
+        <div data-role="content">
+            <table class="userdata">
                 <tr class="name">
                     <th>Nome</th>
                     <td><span data-property="firstname"></span> <span data-property="lastname"></span></td>
@@ -76,65 +71,85 @@
                     </td>
                 </tr>
             </table>
-		</div>
-	</div>
+        </div>
+    </div>
 
-    <div data-role="page" id="TaSearch">
+    <div data-role="page" id="TaSearch" data-theme="a">
+        <div data-role="header">
+            <h1>Categorias</h1>
+            <a href="index.html" data-icon="gear" class="ui-btn-right">opções</a>
+        </div>
+
+        <div data-role="content">
+        </div>
     </div>
 
     <!-- Página de informações do local -->
-	<div data-role="page" id="TaLocal" style="height: 100%">
-		<div data-role="content" style="height: 10%">
-			<img border="0" src="galeto-d-italia.jpg" width="100" height="100" style="height: 100%; width: 50%; margin-left: 25%">
-			<table style="padding-left: 1%; width: 79%;height:100%" border="0">
-				<tbody>
-					<tr>
-					</tr>
-						<td><h3>Galeto  D' Italia </h3></td>
-					<tr>
-						<td><h5> R. Benjamin Constant, 171</h5></td>
-					</tr>
-					<tr>
-						<td><h5>Novo Hamburgo</h5></td>
-					</tr>
-					<tr>
-						<td><h5>(51) 3595-1980 </h5></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<ul data-role="listview" id="listview" data-inset="true">
-			<li data-role="list-divider" id="divider">Divider</li>
-			<li id="listitem">Item</li>
-			<li id="listitem0">Item</li>
-			<li id="listitem1">Item</li>
-		</ul>
-		<a href="#TaAvaliacao" data-role="button" id="button0">Avaliar</a>
-	</div>
+    <div data-role="page" id="TaLocal" style="height: 100%" data-theme="a">
+        <div data-role="header">
+            <h1>Detalhes</h1>
+            <a href="index.html" data-icon="gear" class="ui-btn-right">opções</a>
+        </div>
+
+        <div data-role="content">
+            <img border="0" src="galeto-d-italia.jpg" width="100" height="100" style="height: 100%; width: 50%; margin-left: 25%">
+            <table style="padding-left: 1%; width: 79%;height:100%" border="0">
+                <tbody>
+                    <tr>
+                    </tr>
+                        <td><h3>Galeto  D' Italia </h3></td>
+                    <tr>
+                        <td><h5> R. Benjamin Constant, 171</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h5>Novo Hamburgo</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h5>(51) 3595-1980 </h5></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a href="#TaAvaliacao" data-role="button" id="btnAvaliar">Avaliar</a>
+        </div>
+    </div>
 
     <!-- Página de avaliação do local pelo usuário -->
-	<div data-role="page" id="TaAvaliacao">
-		<div data-role="fieldcontain">
-			     <h3 for="flip-a" style="width: 70%">GOSTOU DO LOCAL?</h3>
-            <select name="slider" id="flip-a" data-role="slider" style="width: 30%">
-				<option value="s">Sim</option>
-				<option value="n">Não</option>
-			</select>
+    <div data-role="page" id="TaAvaliacao" data-theme="a">
+        <div data-role="header">
+            <h1>Avaliar</h1>
+            <a href="index.html" data-icon="gear" class="ui-btn-right">opções</a>
+        </div>
 
-			</div>
-		    <div data-role="collapsible" id="collapsible">
-			      <h3>Possui adaptações:</h3>
-				      <label><input type="checkbox" name="checkbox-0" /> Rampa </label>
-				      <label><input type="checkbox" name="checkbox-0" /> Mesas </label>
-				      <label><input type="checkbox" name="checkbox-0" /> Sanitários </label>
-				      <label><input type="checkbox" name="checkbox-0" /> Entrada/Saída </label>
-				      <label><input type="checkbox" name="checkbox-0" /> Estacionamento </label>
-		    </div>
-	</div>
+        <div data-role="content">
+            <div data-role="fieldcontain">
+                <h3 for="flip-a" style="width: 70%">Gostou do local?</h3>
+                <select name="slider" id="flip-a" data-role="slider" style="width: 30%">
+                    <option value="s">Sim</option>
+                    <option value="n">Não</option>
+                </select>
+            </div>
 
-	<script src="js/initOptions.js"></script>
+            <div data-role="collapsible" id="collapsible">
+                <h3>Possui adaptações:</h3>
+                <label><input type="checkbox" name="checkbox-0" /> Rampa </label>
+                <label><input type="checkbox" name="checkbox-0" /> Mesas </label>
+                <label><input type="checkbox" name="checkbox-0" /> Sanitários </label>
+                <label><input type="checkbox" name="checkbox-0" /> Entrada/Saída </label>
+                <label><input type="checkbox" name="checkbox-0" /> Estacionamento </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/initOptions.js"></script>
     <script src="js/TenhoAcesso.js"></script>
     <script src="js/messages.js"></script>
+
+    <script type="text/javascript">
+    //Adiciona o botão voltar a todos cabeçalhos de páginas.
+    $.mobile.page.prototype.options.addBackBtn = true;
+    $.mobile.page.prototype.options.backBtnText = "voltar";
+    </script>
 
 </body>
 </html>
