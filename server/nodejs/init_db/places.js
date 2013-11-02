@@ -235,7 +235,7 @@ var Place = {
                          */
                         return Q.all(cat_loop_arr);
                     })
-                    .finally(function() {
+                    .fin(function() {
                         //reordena os resultados
                         categories_result.sort(function(a, b) {
                             if (a.weight > b.weight || a.weight && !b.weight) return -1;
@@ -248,7 +248,7 @@ var Place = {
                          */
                         Place.user_search_save(db, ll, username, type, category_id, categories_result);
                     })
-                    .catch(function(err) {
+                    .fail(function(err) {
                         console.err(err);
                     });
             });

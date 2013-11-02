@@ -87,17 +87,22 @@ function user_search_find(WL, db, ll, username, type, category_id) {
  */
 function user_search_refresh(WL, db, ll, username, type, category_id) {
     if (type == "category") {
-        var categories = db.collection('categories');
-
-        function _category_search(arr, id) {
-            var i;
-            for (i = 0; i < arr.length; i++) {
-                if (arr[i].foursquare_id == id) {
-                    return arr[i];
-                }
-            }
-            return null;
-        }
+        var categories = db.collection('categories'),
+        	/**
+        	 * Função que busca uma das categorias presentes no array, pelo id,
+        	 * Basicamente um array_search
+        	 * @param {Array} arr
+        	 * @param {String} id
+        	 */
+	        _category_search = function (arr, id) {
+	            var i;
+	            for (i = 0; i < arr.length; i++) {
+	                if (arr[i].foursquare_id == id) {
+	                    return arr[i];
+	                }
+	            }
+	            return null;
+	        };
 
         //busca as categorias de nivel superior da base (todas elas)
         categories.find().toArray(function(err, categories_result) {
@@ -143,7 +148,7 @@ function user_search_refresh(WL, db, ll, username, type, category_id) {
                                         res.weight += weight_400(ven);
                                     }
                                 });
-                        }
+                        };
 
                     /*
                      * Varre os arrays de venues e categories (do retorno do 4sq),
@@ -167,7 +172,7 @@ function user_search_refresh(WL, db, ll, username, type, category_id) {
                      */
                     return Q.all(cat_loop_arr);
                 })
-                .finally(function() {
+                .fin(function() {
                     //reordena os resultados
                     categories_result.sort(function(a, b) {
                         if (a.weight > b.weight || a.weight && !b.weight) return -1;
@@ -180,7 +185,7 @@ function user_search_refresh(WL, db, ll, username, type, category_id) {
                      */
                     user_search_save(WL, db, ll, username, type, category_id, categories_result);
                 })
-                .catch(function(err) {
+                .fail(function(err) {
                     if(err) { WL.err(err.err); return; }
                 });
         });
