@@ -18,7 +18,7 @@ require("wl")
 
 var MongoClient = require('mongodb').MongoClient;
 var Q = require('q');
-var foursquare = (require('../foursquarevenues'))(
+var foursquare = (require('./foursquarevenues'))(
     'T3ULFN503MOA4EXXDE3PPFBDELAIAX1PYBNCG4HXFVI4QCRX', 
     '5MZ3R5UAI4CPXXXT220FPURG1Y45AXGGQXGVDGFBMEAYB45E'
 );
@@ -185,7 +185,7 @@ function user_search_refresh(WL, db, ll, username, type, category_id) {
                 });
         });
     }
-},
+}
 
 /**
  * Salva uma busca de usuário na base
@@ -209,7 +209,7 @@ function user_search_save(WL, db, ll, username, type, category_id, results) {
         WL.success({usersearch: result});
         db.close(); /* Fecha a conexão com a base */
     });
-},
+}
 
 /*
  * Métodos responsáveis por calcular
@@ -221,21 +221,21 @@ function user_search_save(WL, db, ll, username, type, category_id, results) {
  */
 function weight_1600(venue) {
     return (venue.location.distance <= 1600) ? 1 : 0;
-},
+}
 
 /**
  * Adiciona ao peso, se local for mais proximo de 800m
  */
 function weight_800(venue) {
     return (venue.location.distance <= 800) ? 1 : 0;
-},
+}
 
 /**
  * Adiciona ao peso, se local for mais proximo de 400m
  */
 function weight_400(venue) {
     return (venue.location.distance <= 400) ? 1 : 0;
-},
+}
 
 /**
  * Adiciona ao peso, se local tiver opções disponíveis para a acessibilidade do usuário

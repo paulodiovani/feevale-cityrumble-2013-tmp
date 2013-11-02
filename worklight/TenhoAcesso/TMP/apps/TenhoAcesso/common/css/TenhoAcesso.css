@@ -10,3 +10,46 @@ a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, c
 	margin: 0 auto;
 	width: 320px;
 }
+
+
+/* Estilos da página de busca */
+
+.place {
+    float: left;
+    padding: 2px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.place.large {
+    width: 50%;
+    height: 200px;
+}
+
+.place.medium {
+    width: 50%;
+    height: 100px;
+}
+
+.place.small {
+    width: 25%;
+    height: 100px;
+}
+
+.place.hidden {
+    display: none;
+}
+
+.place .tile {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    color: #202020;
+    font-weight: bold;
+    background:  #cacbcd;
+}

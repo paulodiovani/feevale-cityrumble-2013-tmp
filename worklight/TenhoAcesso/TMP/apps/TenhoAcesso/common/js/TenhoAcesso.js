@@ -33,6 +33,9 @@ function wlCommonInit(){
         Ta.connect(Ta.getUserData);
     });
 
+    $('#menu-place-search a').click(function() {
+        Ta.connect(Ta.searchForCategories);
+    });
 }
 
 /**
@@ -128,5 +131,78 @@ Ta = {
             onFailure: Ta._onFailure,
             invocationContext: {}
         });
+    },
+    
+    /**
+     * Obtém a posição geogrática para busca por categorias.
+     */
+    searchForCategories: function(connectionResponse) {
+        WL.Device.Geo.acquirePosition(
+    		Ta.getCategoriesNearby, 
+    		Ta._onFailure, 
+    		{enableHighAccuracy: true, maximumAge: 30000}
+		);    	
+    },
+
+    /**
+     * Obtém as categorias dos estabelecimentos por perto
+     * @param {Geoposition} geo
+     */
+    getCategoriesNearby: function(geo) {
+        //primeiro, oculta todos os tiles
+        $("#TaSearch .place").hide();
+        
+        var ll = [geo.coords.latitude, geo.coords.longitude].join(","); 
+        	
+        WL.Client.invokeProcedure({
+            adapter: "PlaceAdapter",
+            procedure: "searchCategories",
+            parameters: [ll, "silva"]   //username fixo por hora
+        }, {
+            /**
+             * Sucesso na requisição, ou seja, retornou dados do usuário
+             * @param {Object} response
+             */
+            onSuccess: function(response) {
+                /*
+                 * `response.invocationResult` contém o json retornado pelo adapter
+                 * nosso `userdata` é uma propriedade deste objeto.
+                 */
+                var userSearch = response.invocationResult.usersearch,
+                    tiles      = userSearch.results;
+
+                /**
+                 * Função que Distribui os resultados nos "tiles"
+                 */
+                function add_tiles() {
+                    var $this  = $(this),
+                        t_data = (tiles) ? tiles.shift() : undefined;
+
+                    if (t_data === undefined) {
+                        return; //acabou :'(
+                    }
+
+                    $this
+                        .show()
+                        .find(".tile .title").text( t_data.name );
+                }
+
+                /*
+                 * Fazemos para cada tamanho,
+                 * começando pelos maiores (maior relevância).
+                 * Note que, aqui, contamos que os resultados da busca,
+                 * já estejam organizados (maior para menor relevância)
+                 * pelo servidor.
+                 */
+                $("#TaSearch .place.large" ).each(add_tiles);
+                $("#TaSearch .place.medium").each(add_tiles);
+                $("#TaSearch .place.small" ).each(add_tiles);
+
+                //altera a exibição para a página do usuário
+                $.mobile.changePage("#TaSearch");
+            },
+            onFailure: Ta._onFailure,
+            invocationContext: {}
+        });        
     }
 };
