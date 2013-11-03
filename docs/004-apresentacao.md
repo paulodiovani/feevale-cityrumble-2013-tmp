@@ -121,7 +121,7 @@ Esses conteúdos podem ser...
 
 ## Relatórios de receptividade e oportunidades melhorias
 
-Os etabelecimentos podem ainda acessar relaórios detalhados, fornecidos
+Os estabelecimentos podem ainda acessar relatórios detalhados, fornecidos
 pelo _Tenho Acesso_, exibindo como seu público tem qualificado o local,
 quais seus pontos fortes e oportunidades de melhoria.
 
