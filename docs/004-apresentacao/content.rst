@@ -27,6 +27,8 @@
 
 -----------------------------
 
+:data-x: r0
+:data-rotate-x: -90
 
 *"O que é uma cidade?"*
 
@@ -37,12 +39,17 @@
 
 -----------------------------
 
+:data-x: r1400
+
 **Uma cidade, é feita de pessoas.**
 
 .. note::
     Mais do que isso...
 
 -----------------------------
+
+:data-x: r0
+:data-rotate-x: 0
 
 **A cidade, são as pessoas.**
 
@@ -110,6 +117,7 @@ Acesso à locais
 -----------------------------
 
 :id: splash-ta
+:data-scale: 0.6
 
 .. class:: huge
 
@@ -122,6 +130,11 @@ Tenho Acesso
     O *Tenho Acesso* foi criado para satisfazer esta necessidade.
 
 -----------------------------
+
+:id: equalize
+:data-x: r0
+:data-y: r200
+:data-scale: 1
 
 *Inteligente é equalizar*
 
@@ -189,10 +202,20 @@ resultados mais relevantes com maior tamanho e destaque
 
 -----------------------------
 
-.. image:: img/screen02-restaurantes.jpg
+:data-x: r0
+:data-rotate-y: 90
+
+.. image:: img/screen02-restaurantes-mod3.png
     :height: 600
 
+.. note::
+    Na lista de locais, são exibidos ícones demonstrando as melhorias
+    voltadas para cada tipo de necessidade.
+
 -----------------------------
+
+:data-x: r1400
+:data-rotate-y: 0
 
 *"O que você vê primeiro, é o melhor para você."*
 
@@ -248,8 +271,22 @@ opção de informar que melhorias o local possui
 :data-x: 0
 :data-y: r1000
 
-Oportunidades de negócio
-========================
+.. image:: img/money-bag.png
+    :width: 300
+
+.. note::
+    Falamos muito sobre o público-alvo e facilidade de uso do aplicativo
+    até agora.
+
+    Chegou o momento de falarmos um pouco sobre nós, 
+    sobre *o que ganhamos com isso?*
+
+-----------------------------
+
+:data-x: r1400
+
+Monetização
+===========
 
 * links patrocinados
 * banners
@@ -296,6 +333,31 @@ Mais opções
     * Cervejas disponíveis em bares, combinando com a preferência do usuário
     * Promoções em lojas locais, combinando com produtos e serviços mais consumidos pelo usuário
     * etc.
+
+-----------------------------
+
+:id: about-1
+:data-x: 7000
+:data-y: 0
+
+grupo ``/tmp``
+==============
+
+* Blanda Mello
+* Cladmir Lima
+* Fabio Beneditto
+* Mateus Fassina
+* Paulo Diovani
+* Vanessa Monni
+
+-----------------------------
+
+:id: about-2
+:data-y: r1000
+
+powered by `Hovercraft! <https://github.com/regebro/hovercraft/>`_
+
+powered by `impress.js <https://github.com/bartaz/impress.js/>`_
 
 -----------------------------
 
