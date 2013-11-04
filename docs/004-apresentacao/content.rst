@@ -126,6 +126,8 @@ Acesso à locais
     
         "*Equalizar significa uniformizar, tornar igual.*"
 
+    Este é o slogan do Tenho Acesso.
+
 -----------------------------
 
 :data-x: 0
