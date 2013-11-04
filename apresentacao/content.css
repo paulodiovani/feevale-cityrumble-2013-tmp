@@ -8,6 +8,27 @@ body {
     background-color: #202020;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: #cacbcd;
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+
+    -webkit-transition: 0.5s;
+    -moz-transition:    0.5s;
+    -ms-transition:     0.5s;
+    -o-transition:      0.5s;
+    transition:         0.5s;    
+}
+
+a:hover,
+a:focus {
+    background: #f78f12;
+    text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+}
+
 p {
     font-size: 125%;
     font-weight: normal;
@@ -72,14 +93,34 @@ img {
 
 .step {
     width: 800px;
-    /*height: 600px;*/
 }
+
+
+/*
+    make inactive steps transparent.
+*/
+.impress-enabled .step {
+    opacity: 0;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
 
 .panel-color {
     background-color: #cacbcd;
 }
 
+.impress-on-equalize #splash-ta {
+    opacity: 1;
+}
+
 .impress-on-overview .step {
+    opacity: 1;
     cursor: pointer;
 }
 
