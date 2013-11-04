@@ -111,8 +111,12 @@ Acesso à locais
 
 :id: splash-ta
 
+.. class:: huge
+
+Tenho Acesso
+
 .. image:: img/ta-logo.png
-    :width: 400
+    :width: 302
 
 .. note::
     O *Tenho Acesso* foi criado para satisfazer esta necessidade.

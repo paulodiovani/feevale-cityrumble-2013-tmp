@@ -82,3 +82,7 @@ img {
 .impress-on-overview .step {
     cursor: pointer;
 }
+
+.huge {
+    font-size: 200%;
+}
