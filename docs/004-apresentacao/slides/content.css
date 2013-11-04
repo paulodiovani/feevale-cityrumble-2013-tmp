@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif+Caption|Viga|Oleo+Script|Satisfy);
+
+body {
+    font-size: 200%;
+    text-align: center;
+    font-family: "PT Serif Caption";
+    color: white;
+    background-color: #202020;
+}
+
+p {
+    font-size: 125%;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+em {
+    font-family: Satisfy;
+    font-size: 142%;
+}
+
+strong {
+    font-family: "Oleo Script";
+    font-size: 127%;
+    /*letter-spacing: -2px;*/
+}
+
+h1, h2, h3, h4 {
+    font-family: Viga;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+}
+
+h1 {
+    border-radius: 15px 15px 0 0;
+    background-color: #f78f12;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: left;
+}
+
+li {
+    font-size: 90%;
+    /*font-family: serif;*/
+    /*font-weight: normal;*/
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    padding-left: 0.3em;
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#ThreeD H1 {
+    font-family: Racing Sans One;
+    font-size: 300%;
+}
+
+img {
+    border: 10px solid #cacbcd;
+    background-color: #cacbcd;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.step {
+    width: 800px;
+    /*height: 600px;*/
+}
+
+.panel-color {
+    background-color: #cacbcd;
+}
+
+.impress-on-overview .step {
+    cursor: pointer;
+}
